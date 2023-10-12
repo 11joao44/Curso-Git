@@ -32,13 +32,13 @@ C:\Curso-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
 ### Git branch:  
 > **Branches (Ramificações, em português) Trabalhar em paralelo no mesmo projeto simultaneamente.**
 > 
-> **Com git branch > podemos criar, listar e excluir as branches.**
+> **Com o git branch > podemos criar, listar e excluir as branches.**
 
 1. Criar branch
 ```bash
 C:\Curso-Git> git branch nome_branch
 ```
-- esse comando cria uma branch no seu repositorio-local e estará apenas na sua maquina
+- 'esse comando cria uma branch no seu repositorio-local e estará apenas na sua maquina'
 
 2. Ver todas a branch
 ```bash
@@ -52,22 +52,22 @@ C:\Curso-Git> git branch -d nome_branch
 ***
 
 ### Git checkout:  
-> **Ele é usado para navegar entre branches.**
+> **O comando Git checkout é usado para navegar entre branches.**
   
-1. Comando para verificar as branch e visualizando a atual  
+1. Comando para verificar as branch e visualizar a atual  
 ```bash
 C:\Curso-Git> git branch
     developer
     '* main'
 ```  
 
-2. Comando para mudar para outra branch  
+1. Comando para mudar para outra branch  
 ```bash
     C:\Curso-Git> git checkout developer
       Mudou para branch 'developer'
 ```  
 
-3. Comando para verificar as branch e visualizando a atual
+1. Verificando novamente as branch e visualizando a atual
 ```bash
     C:\Curso-Git> git branch
       '* developer'
@@ -76,15 +76,20 @@ C:\Curso-Git> git branch
 ***
 
 ### Git status:  
-> **git status mostra informações sobre a branch atual.**
+> **O conado Git status exibirá informações sobre o status atual do seu repositório e branch.**
 
-1. Exemplo
+1. Exemplo em um arquivo com alterações que não foram salvas ainda
 ```bash 
 C:\Curso-Git> git status
-    'Mudanças não preparadas para commit:'
+    Na branch main
+    Sua branch está atualizada com 'origin/main'.
+
+    'Mudanças não adicionadas para commit:'
     (use "git add ." para atualizar tudo que será confirmado)
     (use "git restore <file>" para descartar alterações no diretório de trabalho)
             'modificado:' README.md - no terminal ficará em vermelho
+
+    nenhuma alteração adicionada ao commit (use "git add" e/ou "git commit -a")
 ```
 
 2. Comando para adicionar todas as alterações
@@ -92,7 +97,7 @@ C:\Curso-Git> git status
 C:\Curso-Git> git add .
 ```
 
-3. Olhando as informações depois do 'git add'
+3. Olhando as informações depois do 'git add .'
 ```bash
 C:\Curso-Git> git status
     Mudanças pronta para commit:
@@ -101,19 +106,19 @@ C:\Curso-Git> git status
 ```
 ***
 ### Git add 
-> **git add serve para incluir as alterações de um ou vários arquivos em nosso próximo commit.**
+> **O comando Git add serve para incluir as alterações de um ou vários arquivos em nosso próximo commit.**
 
-1. Adicionar um único arquivo
+1. Adicionar um único arquivo para etapa de commit
 ```bash
 C:\Curso-Git> git add nome_arquivo
 ```
 
-2. Adicionar todos os arquivos
+1. Adicionar todos os arquivos para etapa de commit
 ```bash
 C:\Curso-Git> git add -A
 ```
 
-3. Adicionar todos os arquivos menos os excluidos 
+1. Adicionar todos os arquivos menos os excluidos para etapa de commit
 ```bash
 C:\Curso-Git> git add .
 ```
@@ -122,7 +127,9 @@ C:\Curso-Git> git add .
 ***
 
 ### Git commit:
-> **Comando para adicioanr e registrar as alterações no seu repositório.**
+> **O comando Git commit serve para adicioanr e registrar as alterações no seu repositório.**
+> 
+> **Um commit é uma captura instantânea do estado do seu projeto em um determinado momento no tempo.**
 
 ```bash 
 C:\Curso-Git> git commit -m "Sua mensagem de commit aqui"
@@ -132,16 +139,18 @@ C:\Curso-Git> git commit -m "Sua mensagem de commit aqui"
 ***
 
 ### Git push:
-> **Comando para enviar suas alterações ao servidor remoto.**
-> **Git push faz o upload dos seus commits e alterações no repositório remoto.**
+> **O comando Git push serve para enviar suas alterações ao repositorio-remoto.**
+> 
+> **Git push faz o upload dos seus commits e alterações do seu repositório local para o repositório remoto.**
 
 ```bash
 C:\Curso-Git> git push  https://gitlab.com/11joao44/nome_projeto.git nome_branch
 ```
+**importante especificar a branch no final do comando para indicar para qual branch do repositório remoto você deseja enviar os commits.**
 ***
 
 ### Git pull:
-> **O comando git pull é usado para obter as atualizações de um repositório remoto.** 
+> **O comando Git pull é usado para obter as atualizações de um repositório remoto.** 
 
 ```bash 
 C:\Curso-Git> git pull  https://gitlab.com/11joao44/nome_projeto.git
@@ -151,10 +160,10 @@ C:\Curso-Git> git pull  https://gitlab.com/11joao44/nome_projeto.git
 ***
 
 ### Git revert:
-> **O git revert é usado para desfazer um commit anterior e criando um novo commit que reverte as alterações.**
+> **O comando Git revert é usado para desfazer um commit anterior e criando um novo commit que reverte as alterações.**
 
 ```bash
-C:\Curso-Git> git revert commit-hash
+C:\Curso-Git> git revert -n commit-hash
 ``` 
 **O hash (identificador único) do commit**
 
@@ -162,13 +171,13 @@ C:\Curso-Git> git revert commit-hash
 ***
 
 ### Git merge:
-> **Git merge para unir uma branch com outra.**
+> **O comando Git merge serve para unir uma branch com outra.**
 
 ```bash
 C:\Curso-Git> git merge branch_principal
 ```
 
-**combinar as alterações de uma branch em outra, criando um novo commit de mesclagem que representa a união das mudanças das branches envolvidas**
+**Combinar as alterações de uma branch em outra, criando um novo commit de mesclagem que representa a união das mudanças das branches envolvidas**
 ***
 
 ### Lista dos comandos
