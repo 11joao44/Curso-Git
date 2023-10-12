@@ -12,5 +12,5 @@ Instalar Git no computador
 Link: https://git-scm.com/downloads
 
 Changes: Significa houve mudanças no código.
-Fecth: Verificar se o código teve alguma modificação de outro dev.
+Fecth origin: Verificar se o código teve alguma modificação de outro dev.
 Pull: Pegar as modificações que o outro dev fez e carrega no meu código.
