@@ -1,2 +1,3 @@
 # Auto detect text files and perform LF normalization
+# Detecta automaticamente arquivos de texto e executa a normalização LF
 * text=auto
