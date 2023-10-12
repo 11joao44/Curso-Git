@@ -1,58 +1,91 @@
 # Curso-Git
- Curso de versionamento de código com Git
+Curso de versionamento de código com Git
 ***
-## Curso GIT 
-**Git:** Software de Controle de Versão - VCS
 
-**Principais vantagens**
-► Controle de histórico - acessar versões anteriores do código
-► Ramificação do projeto - separar em parte do memso arquivo
+## Introdução ao Git
 
-**Instalar Git no computador**
-Link: https://git-scm.com/downloads
+**Git:** Software de Controle de Versão (VCS)
 
-**Changes:** Significa houve mudanças no código.
-**Fecth origin:** Verificar se o código teve alguma modificação de outro dev.
-**Pull:** Pegar as modificações que o outro dev fez e carrega no meu código.
+**Principais vantagens:**
 
-**► Tratamento de erro**
+- Controle de histórico: Acesso a versões anteriores do código.
+- Ramificação do projeto: Possibilidade de separar diferentes partes do mesmo código.
 
-**Erro de historico**: 
+## Instalação do Git
+
+Você pode instalar o Git em seu computador a partir do [site oficial](https://git-scm.com/downloads).
+
+## Conceitos Básicos
+
+### Alterações no Código
+
+- **Changes:** Indica que houve modificações no código.
+- **Fetch origin:** Verifica se o código teve alguma modificação feita por outro desenvolvedor.
+- **Pull:** Obtém as modificações que outro desenvolvedor fez e as incorpora ao seu código.
+
+### Tratamento de Erros
+
+#### Erro de Histórico
+
+Ao realizar um `git pull`, você pode se deparar com o erro:
+
 warning: redirecting to https://gitlab.com/11joao44/nome_projeto/
 fatal: refusing to merge unrelated histories
 
-Solução: git pull --allow-unrelated-histories
 
+Solução: Utilize `git pull --allow-unrelated-histories` para permitir a mesclagem de histórias não relacionadas.
 
-**Erro de merging:**
-warning: redirecting to https://gitlab.com/11joao44/nome_proejto/
-Auto-merging index.html
-CONFLICT (add/add): Merge conflict in index.html
-Automatic merge failed; fix conflicts and then commit the result.
+#### Conflitos de Mesclagem (Merge)
 
-**Sobre:**
-O comando git pull --allow-unrelated-histories 
-resultou em um conflito de merge no arquivo index.html. 
-Isso ocorreu porque o Git está tentando mesclar duas linhagens de histórico 
-que não têm um ancestral comum.
+Se ocorrerem conflitos durante a mesclagem, você pode resolver manualmente da seguinte maneira:
 
-Solução: Você precisa resolver esse conflito manualmente. 
+1. Abra o arquivo `index.html` em um editor de texto.
+2. Encontre as áreas de conflito marcadas como:
 
-A seção entre <<<<<<< HEAD e ======= representa as alterações da sua branch local. #Verde
-A seção entre ======= e >>>>>>> commit-hash representa as alterações da branch remota. #Roxa
-resolver os conflitos, remova as marcações <<<<<<< HEAD, =======, >>>>>>> commit-hash
-e deixe o código como você deseja que ele fique após a mesclagem.
+```plaintext
+<<<<<<< HEAD
+Conteúdo da sua branch local
+=======
+Conteúdo da branch remota
+>>>>>>> commit-hash
 
-git add index.html
-git commit -m "Resolva conflitos no arquivo index.html"
-git pull
+Solução: Utilize `git pull --allow-unrelated-histories` para permitir a mesclagem de histórias não relacionadas.
 
-**Issues:** 
-Para tira duvidas ou relatar problemas que não conseguir resolver 
-ou não achou uma solução
+#### Conflitos de Mesclagem (Merge)
 
-## Markdown:
-[Markdown](https://t.ctcdn.com.br/gXbdC9nskWcDLqDIag-21M7XYtI=/1200x675/smart/i249797.jpeg)
+Se ocorrerem conflitos durante a mesclagem, você pode resolver manualmente da seguinte maneira:
 
-**Branch/Ramificação:**
+1. Abra o arquivo `index.html` em um editor de texto.
+2. Encontre as áreas de conflito marcadas como:
 
+```plaintext
+<<<<<<< HEAD
+Conteúdo da sua branch local
+=======
+Conteúdo da branch remota
+>>>>>>> commit-hash
+```
+
+Edite o arquivo para escolher as partes do código que deseja manter, removendo as marcações.
+Salve o arquivo.
+Adicione o arquivo resolvido: git add index.html
+Cometa as alterações: git commit -m "Resolva conflitos no arquivo index.html"
+Continue com o pull: git pull
+
+# Issues
+Use as "Issues" para tirar dúvidas, relatar problemas não resolvidos ou compartilhar soluções.
+
+# Markdown
+Markdown: Linguagem de marcação leve para formatação de texto.
+
+# Branch/Ramificação
+As branches são usadas para desenvolver funcionalidades isoladamente do código principal.
+Exemplo de criação de uma nova branch e alternância para ela:
+# Crie uma nova branch chamada "minha-feature"
+git checkout -b minha-feature
+
+# Faça alterações e commits na nova branch
+
+# Quando estiver pronto para mesclar na branch principal (geralmente "main"):
+git checkout main
+git merge minha-feature
