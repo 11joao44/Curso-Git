@@ -1,7 +1,5 @@
 # Curso-Git
 Curso de versionamento de código com Git
-***
-
 ## Introdução ao Git
 
 **Git:** Software de Controle de Versão (VCS)
@@ -29,6 +27,7 @@ C:\Curso-Git> git clone https://gitlab.com/11joao44/nome_projeto.git
 C:\Curso-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
 ```  
 - `os dois metodos fazem a mesma função, mas o SSH é Criptografado sendo mais seguro.`
+***
 
 ### Git branch:  
 > **Branches (Ramificações, em português) Trabalhar em paralelo no mesmo projeto simultaneamente.**
@@ -50,6 +49,7 @@ C:\Curso-Git> git branch
 ```bash
 C:\Curso-Git> git branch -d nome_branch
 ```
+***
 
 ### Git checkout:  
 > **Ele é usado para navegar entre branches.**
@@ -73,6 +73,7 @@ C:\Curso-Git> git branch
       '* developer'
       main
 ``` 
+***
 
 ### Git status:  
 > **git status mostra informações sobre a branch atual.**
@@ -98,6 +99,7 @@ C:\Curso-Git> git status
     (use "git restore --staged <file>..." para desestabilizar)
         modificado: README.md - no terminal ficará em verde
 ```
+***
 ### Git add 
 > **git add serve para incluir as alterações de um ou vários arquivos em nosso próximo commit.**
 
@@ -117,6 +119,7 @@ C:\Curso-Git> git add .
 ```
 
 **O comando git add não altera o repositório. As alterações não são salvas até que se use o git commit.**
+***
 
 ### Git commit:
 > **Comando para adicioanr e registrar as alterações no seu repositório.**
@@ -126,6 +129,7 @@ C:\Curso-Git> git commit -m "Sua mensagem de commit aqui"
 ```
 
 **Importante: git commit salva suas alterações apenas no repositorio-local.**
+***
 
 ### Git push:
 > **Comando para enviar suas alterações ao servidor remoto.**
@@ -134,6 +138,8 @@ C:\Curso-Git> git commit -m "Sua mensagem de commit aqui"
 ```bash
 C:\Curso-Git> git push  https://gitlab.com/11joao44/nome_projeto.git nome_branch
 ```
+***
+
 ### Git pull:
 > **O comando git pull é usado para obter as atualizações de um repositório remoto.** 
 
@@ -142,6 +148,7 @@ C:\Curso-Git> git pull  https://gitlab.com/11joao44/nome_projeto.git
 ```
 
 **ele recebe as atualizações do repositório remoto e aplica imediatamente as alterações mais recentes no seu repositorio-local**
+***
 
 ### Git revert:
 > **O git revert é usado para desfazer um commit anterior e criando um novo commit que reverte as alterações.**
@@ -152,6 +159,7 @@ C:\Curso-Git> git revert commit-hash
 **O hash (identificador único) do commit**
 
 **Para ver nosso histórico de commits, primeiro, precisamos usar git log -- oneline**
+***
 
 ### Git merge:
 > **Git merge para unir uma branch com outra.**
@@ -161,6 +169,8 @@ C:\Curso-Git> git merge branch_principal
 ```
 
 **combinar as alterações de uma branch em outra, criando um novo commit de mesclagem que representa a união das mudanças das branches envolvidas**
+***
+
 ### Lista dos comandos
 
 1. `git init`: Inicializa um novo repositório Git.
