@@ -31,7 +31,7 @@ C:\Curso-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
 - `os dois metodos fazem a mesma função, mas o SSH é Criptografado sendo mais seguro.`
 
 ### Git branch:  
-> **Branches (Ramificações, em português) Trabalhar em paralelo no mesmo projeto simultaneamente.** 
+> **Branches (Ramificações, em português) Trabalhar em paralelo no mesmo projeto simultaneamente.**
 > **Com git branch > podemos criar, listar e excluir as branches.**
 
 1. Criar branch
