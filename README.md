@@ -16,7 +16,7 @@ Curso de versionamento de código com Git
 Você pode instalar o Git em seu computador a partir do [site oficial](https://git-scm.com/downloads).
 
 ## Comandos Git
-### Git clone:  
+### Comando: Git clone  
 > **Git clone é uma comando para baixar o código-fonte existente de um repositório remoto** 
 
 1. Clone por HTTPS
@@ -30,7 +30,7 @@ C:\Curso-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
 ```  
 - `os dois metodos fazem a mesma função, mas o SSH é Criptografado sendo mais seguro.`
 
-### Git branch:  
+### Comando: Git branch 
 > **Branches (Ramificações, em português) Trabalhar em paralelo no mesmo projeto simultaneamente.**
 > 
 > **Com git branch > podemos criar, listar e excluir as branches.**
