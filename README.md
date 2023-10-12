@@ -262,3 +262,11 @@ Use as "Issues" para tirar dúvidas, relatar problemas não resolvidos ou compar
 # Markdown
 Markdown: Linguagem de marcação leve para formatação de texto.
 Usada nesse arquivo.
+
+```
+git remote -v
+gitlab  https://gitlab.com/11joao44/curso-git (fetch)
+gitlab  https://gitlab.com/11joao44/curso-git (push)
+origin  https://github.com/11joao44/Curso-Git.git (fetch)
+origin  https://github.com/11joao44/Curso-Git.git (push)
+```
