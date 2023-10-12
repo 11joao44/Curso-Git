@@ -48,6 +48,7 @@ Conteúdo da sua branch local
 =======
 Conteúdo da branch remota
 >>>>>>> commit-hash
+```
 
 Solução: Utilize `git pull --allow-unrelated-histories` para permitir a mesclagem de histórias não relacionadas.
 
@@ -77,6 +78,7 @@ Use as "Issues" para tirar dúvidas, relatar problemas não resolvidos ou compar
 
 # Markdown
 Markdown: Linguagem de marcação leve para formatação de texto.
+Usada nesse arquivo.
 
 # Branch/Ramificação
 As branches são usadas para desenvolver funcionalidades isoladamente do código principal.
