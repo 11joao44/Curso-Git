@@ -1,5 +1,6 @@
-# Curso-Git
-Curso de versionamento de código com Git
+# Manul de Git
+Manual de versionamento de código com Git
+
 ## Introdução ao Git
 
 **Git:** Software de Controle de Versão (VCS)
@@ -24,12 +25,12 @@ git config --global user.email "11joao44@gmail.com"
 
 1. Clone por HTTPS
 ```bash
-C:\Curso-Git> git clone https://gitlab.com/11joao44/nome_projeto.git 
+C:\Manual-Git> git clone https://gitlab.com/11joao44/nome_projeto.git 
 ```
 
 2. Clone por SSH
 ```bash
-C:\Curso-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
+C:\Manual-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
 ```  
 - `os dois metodos fazem a mesma função, mas o SSH é Criptografado sendo mais seguro.`
 ***
@@ -41,18 +42,18 @@ C:\Curso-Git> git clone git@gitlab.com:11joao44/nome_projeto.git
 
 1. Criar branch
 ```bash
-C:\Curso-Git> git branch nome_branch
+C:\Manual-Git> git branch nome_branch
 ```
-- 'esse comando cria uma branch no seu repositorio-local e estará apenas na sua maquina'
+- `esse comando cria uma branch no seu repositorio-local e estará apenas na sua maquina`
 
 2. Ver todas a branch
 ```bash
-C:\Curso-Git> git branch
+C:\Manual-Git> git branch
 ```  
 
 3. Excluir branch 
 ```bash
-C:\Curso-Git> git branch -d nome_branch
+C:\Manual-Git> git branch -d nome_branch
 ```
 ***
 
@@ -61,31 +62,31 @@ C:\Curso-Git> git branch -d nome_branch
   
 1. Comando para verificar as branch e visualizar a atual  
 ```bash
-C:\Curso-Git> git branch
+C:\Manual-Git> git branch
     developer
     '* main'
 ```  
 
 1. Comando para mudar para outra branch  
 ```bash
-    C:\Curso-Git> git checkout developer
+    C:\Manual-Git> git checkout developer
       Mudou para branch 'developer'
 ```  
 
 1. Verificando novamente as branch e visualizando a atual
 ```bash
-    C:\Curso-Git> git branch
+    C:\Manual-Git> git branch
       '* developer'
       main
 ``` 
 ***
 
 ### Git status:  
-> **O conado Git status exibirá informações sobre o status atual do seu repositório e branch.**
+> **O comnado Git status exibirá informações sobre o status atual do seu repositório e branch.**
 
 1. Exemplo em um arquivo com alterações que não foram salvas ainda
 ```bash 
-C:\Curso-Git> git status
+C:\Manual-Git> git status
     Na branch main
     Sua branch está atualizada com 'origin/main'.
 
@@ -97,14 +98,14 @@ C:\Curso-Git> git status
     nenhuma alteração adicionada ao commit (use "git add" e/ou "git commit -a")
 ```
 
-2. Comando para adicionar todas as alterações
+1. Comando para adicionar todas as alterações
 ```bash
-C:\Curso-Git> git add .
+C:\Manual-Git> git add .
 ```
 
-3. Olhando as informações depois do 'git add .'
+1. Olhando as informações depois do 'git add .'
 ```bash
-C:\Curso-Git> git status
+C:\Manual-Git> git status
     Mudanças pronta para commit:
     (use "git restore --staged <file>..." para desestabilizar)
         modificado: README.md - no terminal ficará em verde
@@ -115,20 +116,20 @@ C:\Curso-Git> git status
 
 1. Adicionar um único arquivo para etapa de commit
 ```bash
-C:\Curso-Git> git add nome_arquivo
+C:\Manual-Git> git add nome_arquivo
 ```
 
 1. Adicionar todos os arquivos para etapa de commit
 ```bash
-C:\Curso-Git> git add -A
+C:\Manual-Git> git add -A
 ```
 
 1. Adicionar todos os arquivos menos os excluidos para etapa de commit
 ```bash
-C:\Curso-Git> git add .
+C:\Manual-Git> git add .
 ```
 
-**O comando git add não altera o repositório. As alterações não são salvas até que se use o git commit.**
+**O comando git add é um estado de preparação, não altera o repositório. As alterações não são salvas até que se use o git commit.**
 ***
 
 ### Git commit:
@@ -137,7 +138,7 @@ C:\Curso-Git> git add .
 > **Um commit é uma captura instantânea do estado do seu projeto em um determinado momento no tempo.**
 
 ```bash 
-C:\Curso-Git> git commit -m "Sua mensagem de commit aqui"
+C:\Manual-Git> git commit -m "Sua mensagem de commit aqui"
 ```
 
 **Importante: git commit salva suas alterações apenas no repositorio-local.**
@@ -149,7 +150,7 @@ C:\Curso-Git> git commit -m "Sua mensagem de commit aqui"
 > **Git push faz o upload dos seus commits e alterações do seu repositório local para o repositório remoto.**
 
 ```bash
-C:\Curso-Git> git push  https://gitlab.com/11joao44/nome_projeto.git nome_branch
+C:\Manual-Git> git push  https://gitlab.com/11joao44/nome_projeto.git nome_branch
 ```
 **importante especificar a branch no final do comando para indicar para qual branch do repositório remoto você deseja enviar os commits.**
 ***
@@ -158,7 +159,7 @@ C:\Curso-Git> git push  https://gitlab.com/11joao44/nome_projeto.git nome_branch
 > **O comando Git pull é usado para obter as atualizações de um repositório remoto.** 
 
 ```bash 
-C:\Curso-Git> git pull  https://gitlab.com/11joao44/nome_projeto.git
+C:\Manual-Git> git pull  https://gitlab.com/11joao44/nome_projeto.git
 ```
 
 **ele recebe as atualizações do repositório remoto e aplica imediatamente as alterações mais recentes no seu repositorio-local**
@@ -168,7 +169,7 @@ C:\Curso-Git> git pull  https://gitlab.com/11joao44/nome_projeto.git
 > **O comando Git revert é usado para desfazer um commit anterior e criando um novo commit que reverte as alterações.**
 
 ```bash
-C:\Curso-Git> git revert -n commit-hash
+C:\Manual-Git> git revert -n commit-hash
 ``` 
 **O hash (identificador único) do commit**
 
@@ -179,7 +180,7 @@ C:\Curso-Git> git revert -n commit-hash
 > **O comando Git merge serve para unir uma branch com outra.**
 
 ```bash
-C:\Curso-Git> git merge branch_principal
+C:\Manual-Git> git merge branch_principal
 ```
 
 **Combinar as alterações de uma branch em outra, criando um novo commit de mesclagem que representa a união das mudanças das branches envolvidas**
@@ -258,7 +259,7 @@ removendo as marcações, Salve o arquivo.
 
 Adicione o arquivo resolvido: git add index.html
 
-Cometa as alterações: git commit -m "Resolva conflitos no arquivo index.html"
+Cometa as alterações: git commit -m "Resolvendo conflitos no arquivo index.html"
 Continue com o pull: `git pull`
 
 # Issues
@@ -292,4 +293,34 @@ Refere-se a modificações em arquivos que foram alterados no diretório de trab
 
 Logs (Registros)
 Referem-se aos registros de eventos ou informações relevantes que são registrados por um sistema ou aplicativo. 
+```
+
+### Usando GitFlow
+
+1. Um repositorio sempre iniciara na branch `Main`.
+2. Mudamos imediatamente para a branch `Develop` onde começamos a desenvolver.
+3. Quando optarmos por adicionar novas funcionalidades mudaremos para a brach `Feature`.
+4. Branch `Feature` usada para Testes e Revisões, Integração, Finalização da Ramificação, Desenvolvimento de Novas Funcionalidades.
+5. Após finalizar as alterações voltamos os commits para a Branch `Develop` se jutando talves a outro script já existente na mesma.
+6. Quando validado que finalizamos o projeto antes de subir para produção precisamos passar pela branch `Release`.
+7. `Release` usada em Preparação para Lançamento, Testes de QA, status ok damos o merge na `Main`, se não voltamos para a `Feature`.
+8. Uma observação a Branch `Develop` deve estar na mesma versão da branch `Main` para trabalhamos no código atual.
+9. Branch `Hotfix` correções de bugs simples ou críticos e problemas de segurança.
+10. Merge na `Main` e `Develop` para garantir que a próxima versão em desenvolvimento contenha a correção. 
+
+### Mapa GitFlow
+
+![Minha Imagem](./gitflow.png) 
+
+### Config GitFLow
+
+`Inicialziando Git flow`
+```bash
+C:\Manual-Git> git flow init
+```
+
+Questionarios de config git flow
+
+```bash
+Br
 ```
