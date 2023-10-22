@@ -364,4 +364,21 @@ Observação devo sempre estar na Branch develop para criar esses branch tempora
 
 ```bash
 C:\Manual-Git> git flow release start 1.0
+
+Resumo das ações:
+- Foi criada uma nova branch 'release/1.0', baseada em 'develop'
+- Você está agora no branch 'release/1.0'
+
+Acompanhamento de ações:
+- Aumente o número da versão agora!
+- Comece a fazer correções de última hora na preparação do seu lançamento
+- Quando terminar, execute:
+```
+
+`Momento para realizar o teste e as verificações de QA`
+
+```bash
+C:\Manual-Git> git flow release finish 1.0
+
+
 ```
