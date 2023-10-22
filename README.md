@@ -319,8 +319,32 @@ Referem-se aos registros de eventos ou informações relevantes que são registr
 C:\Manual-Git> git flow init
 ```
 
-Questionarios de config git flow
+1. Configuração Gitflow
 
 ```bash
-Br
+Resumo das ações:
+- Observação ao preciona apenas o "ENTER" ele atriuir o nome padrão ex: "Main", "Develop".
+- Nome da branch para produção da "Main": [Nome da sua escolha] 
+- Nome da branch para desenvolvimento da "develop": [Nome da sua escolha]
+- Nome da branch para versões de "release": [Nome da sua escolha]
+- Nome da branch para branches de "hotfix": [Nome da sua escolha]
+- Nome da branch para branches de "support": [Nome da sua escolha]
+- Prefixo para tags de versão: [Prefixo da sua escolha] ex: 1.0
+- Diretório de ganchos (hooks) e filtros: [Diretório da sua escolha]
+```
+1. Criar uma nova ramificação de branch
+
+```bash
+C:\Manual-Git> git flow feature start css
+Resumo das ações:
+- Foi criada uma nova branch 'feature/css', baseada em 'develop'
+- Agora você está no branch 'feature/css'
+```
+
+`Usado com a finalizade de desenvolver em um determinado arquivo para uma determinada funcionalidade.`
+
+2. Finalizando alterações na nova branch
+
+```bash
+C:\Manual-Git> git flow feature finish css
 ```
