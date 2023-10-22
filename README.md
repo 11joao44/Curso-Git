@@ -380,5 +380,15 @@ Acompanhamento de ações:
 ```bash
 C:\Manual-Git> git flow release finish 1.0
 
+Resumo das ações:
+- O branch de lançamento 'release/1.0' foi mesclado em 'main'
+- O lançamento foi marcado como '1.1.0'
+- A tag de lançamento '1.1.0' foi mesclada em 'develop'
+- O branch de lançamento 'release/1.0' foi excluído localmente
+- Você está agora no branch 'desenvolver'
+```
 
+```bash
+Voltamos para a branch de develop e damos continuaidade ao desenvolvimento,
+Observação!!! as alterações foram adicionadas no branch "develop" e na "main" que é a branch de produção.
 ```
