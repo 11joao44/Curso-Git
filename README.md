@@ -332,10 +332,11 @@ Resumo das ações:
 - Prefixo para tags de versão: [Prefixo da sua escolha] ex: 1.0
 - Diretório de ganchos (hooks) e filtros: [Diretório da sua escolha]
 ```
-1. Criar uma nova ramificação de branch
+1. Criar uma nova ramificação de branch develop
 
 ```bash
 C:\Manual-Git> git flow feature start css
+
 Resumo das ações:
 - Foi criada uma nova branch 'feature/css', baseada em 'develop'
 - Agora você está no branch 'feature/css'
@@ -343,8 +344,24 @@ Resumo das ações:
 
 `Usado com a finalizade de desenvolver em um determinado arquivo para uma determinada funcionalidade.`
 
-2. Finalizando alterações na nova branch
+- Finalizando alterações na nova branch
 
 ```bash
 C:\Manual-Git> git flow feature finish css
+
+Resumo das ações:
+- O ramo de recursos 'feature/css' foi mesclado em 'develop'
+- O branch de recursos 'feature/css' foi excluído localmente
+- Você está agora no branch 'develop'
+```
+```bash
+Voltamos para a branch de develop e damos continuaidade ao desenvolvimento,
+Podemos considera-la como uma branch temporaria de desenvolvimento,
+Observação devo sempre estar na Branch develop para criar esses branch temporarias.
+```
+
+1. Criar uma nova ramificação de branch release
+
+```bash
+C:\Manual-Git> git flow release start 1.0
 ```
