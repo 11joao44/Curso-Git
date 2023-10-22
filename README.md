@@ -275,3 +275,21 @@ gitlab  https://gitlab.com/11joao44/curso-git (push)
 origin  https://github.com/11joao44/Curso-Git.git (fetch)
 origin  https://github.com/11joao44/Curso-Git.git (push)
 ```
+```
+Salve as alterações:(Commits)
+
+Commit (Confirmar):
+É uma operação que registra as alterações realizadas nos arquivos incluídos na área de preparação. Ele cria um ponto de referência na história do repositório.
+
+Markdown “md” (Marcação de texto):
+É uma linguagem de marcação simples e leve amplamente utilizada para formatar e estruturar texto de forma rápida e fácil, com o objetivo de criar documentos legíveis tanto em formato de texto simples como em HTML.
+
+Staged (Preparado)
+Significa que as modificações nos arquivos foram selecionadas e adicionadas à área de preparação, prontas para serem incluídas no próximo commit. As alterações staged serão registradas no histórico do repositório após o commit.
+
+Unstaged (Não preparado)
+Refere-se a modificações em arquivos que foram alterados no diretório de trabalho, mas ainda não foram adicionados à área de preparação. Essas modificações não serão incluídas no próximo commit.
+
+Logs (Registros)
+Referem-se aos registros de eventos ou informações relevantes que são registrados por um sistema ou aplicativo. 
+```
