@@ -1,4 +1,4 @@
-# Manul de Git
+# Manual de Git
 Manual de versionamento de código com Git
 
 ## Introdução ao Git
